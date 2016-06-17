@@ -1,0 +1,797 @@
+﻿@CHARSET "UTF-8";
+*{
+	margin: 0px; list-style: none; padding: 0px; top: 0px; left: 0px; font-size: 24px; border: none;
+}
+
+body{
+	position: absolute; width: 1280px; height: 720px; background: url(../images/index_bg.jpg) no-repeat;
+}
+
+.logo{
+	position: absolute; top: 20px; left: 60px; width: 257px; height: 86px; background: url(../images/logo.png) no-repeat;
+}
+
+.daohang_topic{ 
+	position:absolute; width:548px; height:39px; top:668px; left:200px; background:url(../images/topic_bottom.png) no-repeat;
+}
+/*********************20140627屏蔽掉代码*****************************/
+/*.tail_pic{
+	position: absolute; top: 570px; left: 20px; width: 1240px; height: 150px; 
+}
+
+.tail_pic .tail_pic_0{
+	position: absolute; top: 34px; left: 0px; width: 176px; height: 116px; background: url(../images/tip_pic0.png) no-repeat;
+}
+
+.tail_pic .tail_pic_1{
+	position: absolute; top: 2px; left: 1075px; width: 155px; height: 148px; background: url(../images/tip_pic1.png) no-repeat;
+}
+*/
+.title{
+	position: absolute; top: 60px; left: 320px; height: 40px; width: 840px; color: #F0F0F0; line-height: 40px; font-size: 32px;
+}
+
+.pic{
+	position: absolute; top: 63px; left: 805px;  width: 427px; height: 618px; background: url(../images/pic_bg.png) no-repeat;
+}
+
+.page{
+	position: absolute; top: 615px; left: 773px;  width: 140px; height: 31px; background: #7BC8EC; text-align: center; line-height: 31px;
+}
+
+.tips{
+	position: absolute; width: 1280px; height: 720px; background: url(../images/block_bg.png) repeat; display: none;
+}
+
+.scrollpage{position:absolute;left:0px;top:445px;width:858px;height:45px; line-height: 45px; background: url(../images/image_mask.png) repeat-x;}
+.scrollpage ul{position:absolute;left:0px;top:0px;width:858px;height:45px; line-height: 45px;}
+.scrollpage li{ float:left; width:45px; height:45px;background:url("../images/image_black.png") no-repeat 17px 17px; text-align:center;}
+.scrollpage li.pageFocus{background:url(../images/image_bright.png) no-repeat 14px 14px;}
+
+
+/**
+  * 首页样式
+  */
+  
+.index{
+	position: absolute; top: 0px; left: 0px; width: 1280px; height: 720px;
+}
+
+.index .menu{
+	position: absolute; left: 0px; top: 44px; width: 441px; height: 640px; background: url(../images/menu_bg.png) no-repeat;
+}
+
+.index .menu .menuFocus{
+	position: absolute; left: 37px; top: 61px; width: 320px; height: 67px; background: url(../images/index_menufocus.png) no-repeat; display: none;
+}
+
+.index .menu ul{
+	position: absolute; left: 50px; top: 60px; width: 310px; height: 510px;
+}
+
+.index .menu li{
+	float: left; width: 310px; height: 63px;
+}
+
+.index .menu li span{
+	float: left; width: 310px; display: block; color:#FFF;
+}
+
+.index .menu li span.images{
+	float: left; width: 50px; height: 50px; margin: 10px;
+}
+
+.index .menu li span.text{
+	float: left; width: 240px; height: 50px; margin-top: 6px; margin-bottom: 7px; line-height: 50px;
+}
+
+.index .ads{
+	position: absolute; top: 33px; left: 370px; width: 860px; height: 74px; 
+}
+
+.index .ads2{
+	position: absolute; width: 370px; height: 74px; color: #FFF;
+}
+
+.index .ads_text1{
+	position: absolute; top: 46px; width: 103px; height: 27px; background: url(../images/index_text1.png) no-repeat; color: #fff; font-size: 20px;
+}
+.index .ads_text2{
+	position: absolute; top: 46px; width: 103px; height: 27px; background: url(../images/index_text2.png) no-repeat; color: #fff; font-size: 20px;
+}
+/*.index .ads_text{
+	position: absolute; top: 46px; width: 81px; height: 26px; background: url(../images/ads_text_bg.png) no-repeat; color: #fff; font-size: 20px;
+}*/
+
+.index .ads1{
+	position: absolute; left: 440px; width: 370px; height: 74px;  background: url(../images/ad1.png) no-repeat 30px;
+}
+
+.index .ads2 .adTitle{
+	position: absolute; font-size: 28px; padding-top: 10px; top:32px; left:108px;
+}
+
+.index .ads2 .index_ad_num{
+	color: #FF0000;
+}
+
+.index .ads2 .date{
+	position: absolute; top: 15px; left: 0px; height: 26px; width: 250px; font-size: 23px;
+}
+
+.index .list{
+	position: absolute; top: 42px; left: 290px; width: 988px; height: 635px; background: url(../images/list_ads_bg.png) no-repeat;
+}
+
+
+.index .list .image{
+	position: absolute; top: 70px; left: 80px; width: 860px; height: 490px;
+}
+
+.index .list .image img{
+	position: absolute; top: 0px; left: 0px; width: 860px; height: 490px;
+}
+
+.index .tail_tip{
+	position: absolute; top: 650px; left: 290px; width: 700px; height: 36px; background: url(../images/index_tip.png) no-repeat 0px 2px; padding-left: 40px; line-height: 36px; color: #F0F0F0;
+}
+
+.index .tail_tip marquee{
+	position: absolute; top: 0px; left: 160px; width: 540px; height: 36px; line-height: 36px;
+}
+
+.index .tips .query{
+	position: absolute; top: 230px; left: 440px; width: 412px; height: 320px; background: url(../images/tip_query.png) no-repeat; display: none;
+}
+
+.index .tips .query .tip_query_title{
+	position: absolute; top: 7px; left: 100px; width: 200px; height: 50px; line-height: 50px; font-size: 30px; text-align: center; color: #F0F0F0;
+}
+
+.index .tips .query .tip_query_pic{
+	position: absolute; top: 88px; left: 154px; width: 102px; height: 103px; background: url(../images/fail.png) no-repeat;
+}
+
+.index .tips .query .tip_query_message{
+	position: absolute; top: 210px; left: 10px; width: 390px; height: 50px; line-height: 50px; font-size: 32px; text-align: center; color: #302A2A;
+}
+
+.index .tips .query .tip_query_end{
+	position: absolute; top: 260px; left: 10px; width: 390px; height: 40px; line-height: 40px; text-align: center; color: #302A2A;
+}
+
+/**
+  * 文章列表样式
+  */
+  
+.arti_list_pic{
+	position: absolute; width: 1280px; height: 720px;
+}
+
+.arti_list_pic .list{
+	position: absolute; top: 49px; left: 4px;  width: 984px; height: 606px; background: url(../images/list_short_bg.png) no-repeat;
+}
+
+.arti_list_pic .list .listFocus{
+	position: absolute; top: 70px; left: 40px; width: 855px; height: 62px; background: url(../images/list_short_focus.png) no-repeat;
+}
+
+.arti_list_pic .list ul{
+	position: absolute; top: 70px; left: 85px;  width: 800px; height: 500px;
+}
+
+.arti_list_pic .list li{
+	float: left; width: 800px; height: 60px; line-height: 60px;
+}
+
+.arti_list_pic .list li span{
+	float: left; width: 30px; height: 63px; display: block;
+}
+
+.arti_list_pic .list li span.listNum{
+	width: 50px; text-align: center;
+}
+
+.arti_list_pic .list li span.listTitle{
+	width: 610px; 
+}
+
+.arti_list_pic .list li span.listDate{
+	width: 160px; text-align: center;
+}
+
+.arti_list_pic .progress{
+	position: absolute; top: 130px; left: 900px; width: 5px; height: 461px; background: url(../images/prograss.png) no-repeat;
+}
+
+.arti_list_pic .dot{
+	position: absolute; top: 0px; left: 0px; width: 5px; height: 50px; background: url(../images/dot.png) repeat-y;
+}
+
+/**
+  * 详情页面
+  */
+  
+.detail{
+	position: absolute; width: 1280px; height: 720px; 
+}
+
+.detail .article{
+	position: absolute; top: 46px; left: 4px;  width: 984px; height: 635px; background: url(../images/detail_bg.png) no-repeat;
+}
+
+.detail .progress{
+	position: absolute; top: 190px; left: 885px; width: 5px; height: 360px; background: url(../images/prograss.png) no-repeat;
+}
+
+.detail .dot{
+	position: absolute; top: 0px; left: 0px; width: 5px; height: 50px; background: url(../images/dot.png) repeat-y;
+}
+
+.detail .arti_title{
+	position: absolute; top: 70px; left: 100px; width: 750px; height: 60px; text-align: center;
+}
+
+.detail .arti_title .arti_title_text{
+	position: absolute; top: 0px; left: 0px; width: 750px; height: 36px; line-height: 36px; font-size: 28px;
+}
+
+.detail .arti_title .arti_title_date{
+	position: absolute; top: 40px; left: 0px; width: 750px; height: 24px; line-height: 24px; font-size: 22px;
+}
+
+.detail .arti_content_out{
+	position: absolute; top: 148px; left: 70px; width: 805px; height: 360px; line-height: 36px; overflow: hidden;
+}
+
+.detail .arti_content_in{
+	position: absolute; top: 0px; left: 0px; width: 805px; line-height: 36px;
+}
+
+.detail .arti_content_in img{
+	float: left; width: 805px; height: 360px;
+}
+
+/**
+  *  行为处罚样式
+  */
+.wfcxinfo{
+	position: absolute; width: 1280px; height: 720px; 
+}
+
+.wfcxinfo .content{
+	position: absolute; top: 49px; left: 4px;  width: 984px; height: 606px; background: url(../images/cf_bg.png) no-repeat;
+}
+
+.wfcxinfo .menu{
+	position: absolute; top: 68px; left: 60px;  width: 836px; height: 52px; background: url(../images/cf_menu_bg.png) no-repeat;
+}
+
+.wfcxinfo .menu .menuFocus{
+	position: absolute; top: 0px; left: 0px;  width: 418px; height: 52px; background: url(../images/cf_menu_focus.png) no-repeat;
+}
+
+.wfcxinfo .menu ul{
+	position: absolute; top: 0px; left: 0px;  width: 836px; height: 52px;
+}
+
+.wfcxinfo .menu li{
+	float: left; width: 418px; height: 52px; line-height: 52px; text-align: center;
+}
+
+.wfcxinfo .info{
+	position: absolute; top: 128px; left: 60px;  width: 182px; height: 400px; color: #FFF;
+}
+
+.wfcxinfo .info li{
+	float: left; width: 182px; height: 67px; margin: 6px 0px 7px; background: url(../images/wfin_licent_bg.png) no-repeat; line-height: 67px; text-align: center; display: none;
+}
+
+.wfcxinfo .event{
+	position: absolute; top: 128px; left: 535px;  width: 360px; height: 400px;
+}
+
+.wfcxinfo .event li{
+	float: left; width: 360px; height: 80px; display: none;
+}
+
+.wfcxinfo .event li input{
+	float: left; width: 113px; height: 59px; margin: 10px 0px 11px 7px; background: url(../images/wfin_button_blur.png) no-repeat; color: #000000;
+}
+
+.wfcxinfo .event li input.event_5{
+	width: 113px; height: 59px; margin: 10px 0px 11px 247px;
+}
+
+.wfcxinfo .event li input:focus{
+	background: url(../images/wfin_button_focus.png) no-repeat; border: none;
+}
+
+/**
+  * 查询结果弹出框样式
+  */
+.wfcxinfo .query{
+	position: absolute; top: 230px; left: 440px; width: 412px; height: 320px; background: url(../images/tip_query.png) no-repeat; display: none;
+}
+
+.wfcxinfo .query .tip_query_title{
+	position: absolute; top: 7px; left: 100px; width: 200px; height: 50px; line-height: 50px; font-size: 30px; text-align: center; color: #F0F0F0;
+}
+
+.wfcxinfo .query .tip_query_licence{
+	position: absolute; top: 65px; left: 10px; width: 390px; height: 35px; line-height: 35px; font-size: 28px; text-align: center; color: #302A2A;
+}
+
+.wfcxinfo .query .tip_query_pic{
+	position: absolute; top: 105px; left: 154px; width: 102px; height: 103px; background: url(../images/success.png) no-repeat;
+}
+
+.wfcxinfo .query .tip_query_message{
+	position: absolute; top: 210px; left: 10px; width: 390px; height: 50px; line-height: 50px; font-size: 32px; text-align: center; color: #302A2A;
+}
+
+.wfcxinfo .query .tip_query_message span{
+height: 50px; line-height:30px; font-size:24px; text-align: center; color: #302A2A;
+}
+
+.wfcxinfo .query .tip_query_message span.span_num{
+	color: #ff4848; font-size: 46px;
+}
+
+.wfcxinfo .query .tip_query_end{
+	position: absolute; top: 260px; left: 10px; width: 390px; height: 40px; line-height: 40px; text-align: center; color: #302A2A;
+}
+
+/**
+  * 增加信息弹出框样式
+  */
+  
+.wfcxinfo .adds{
+	position: absolute; top: 80px; left: 350px; width: 592px; height: 558px; background: url(../images/tip_add_new.png) no-repeat; display: none;
+}
+
+.wfcxinfo .adds .tip_add_title{
+	position: absolute; top: 2px; left: 140px; width: 275px; height: 50px; line-height: 50px; font-size: 30px; text-align: center; color: #F0F0F0;
+}
+
+.wfcxinfo .adds .tip_add_licence{
+	position: absolute; top: 60px; left: 30px; width: 502px; height: 110px;
+}
+
+.wfcxinfo .adds .tip_add_licence .tip_add_licence_title{
+	position: absolute; top: 0px; left: 6px; width: 502px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfcxinfo .adds .tip_add_licence .tip_add_licence_event{
+	position: absolute; top: 43px; left: 6px; width: 520px; height: 60px; line-height: 60px; font-size: 28px;
+}
+
+.wfcxinfo .adds input{
+	background: transparent; float: left; display: block; height: 62px; line-height: 62px; width: 520px; font-size: 26px; 
+}
+
+.wfcxinfo .adds input:focus{
+	background: orange;/**#1a7adf;****0701  *orange***/
+}
+
+.wfcxinfo .adds .tip_add_licence .addCarInfo0{
+	height: 62px; line-height: 62px; width: 90px; text-align: center; font-size: 26px; color: #FA2929;
+}
+
+
+.wfcxinfo .adds .tip_add_licence .addCarInfo1{
+	height: 62px; line-height: 62px; width: 430px; font-size: 26px; 
+}
+
+
+.wfcxinfo .adds .tip_add_kind{
+	position: absolute; top: 190px; left: 30px; width: 510px; height: 110px;
+}
+
+.wfcxinfo .adds .tip_add_kind .tip_add_kind_title{
+	position: absolute; top: 0px; left: 6px; width: 500px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfcxinfo .adds .tip_add_kind .tip_add_kind_event{
+	position: absolute; top: 45px; left: 6px; width: 500px; height: 60px; line-height: 60px; font-size: 28px;
+}
+
+
+.wfcxinfo .adds .tip_add_number{
+	position: absolute; top: 320px; left: 30px; width: 510px; height: 110px;
+}
+
+.wfcxinfo .adds .tip_add_number .tip_add_number_title{
+	position: absolute; top: 0px; left: 6px; width: 500px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfcxinfo .adds .tip_add_number .tip_add_number_event{
+	position: absolute; top: 45px; left: 6px; width: 500px; height: 60px; line-height: 60px; font-size: 28px;
+}
+
+.wfcxinfo .adds .tip_add_end{
+	position: absolute; top: 461px; left: 30px; width: 650px; height: 70px;
+}
+
+.wfcxinfo .adds .tip_add_end input{
+	float: left; width: 151px; height: 69px; margin-left: 5px; margin-right: 20px; color: #F0F0F0;
+}
+
+/**
+  * 增加档案信息
+  */
+  
+.wfcxinfo .tip_add_info{
+	position: absolute; top: 80px; left: 350px; width: 592px; height: 460px; background: url(../images/tip_add_info_new.png) no-repeat; display: none;
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_title{
+	position: absolute; top: 2px; left: 130px; width: 285px; height: 50px; line-height: 50px; font-size: 30px; text-align: center; color: #F0F0F0;
+}
+
+
+.wfcxinfo .tip_add_info input{
+	background: transparent; float: left; display: block; height: 60px; line-height: 60px; width: 484px; font-size: 26px; vertical-align: middle; padding-left: 10px;
+}
+
+.wfcxinfo .tip_add_info input:focus{
+	background: orange;/**#1a7adf;****0701  *orange***/
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_record{
+	position: absolute; top: 60px; left: 30px; width: 510px; height: 110px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_record .tip_add_info_record_title{
+	position: absolute; top: 0px; left: 2px; width: 482px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_record .tip_add_info_record_event{
+	position: absolute; top: 45px; left: 2px; width: 482px; height: 60px; line-height: 60px; font-size: 28px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_ID{
+	position: absolute; top: 190px; left: 30px; width: 510px; height: 110px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_ID .tip_add_info_ID_title{
+	position: absolute; top: 0px; left: 2px; width: 482px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_info_ID .tip_add_info_ID_event{
+	position: absolute; top: 48px; left: 2px; width: 482px; height: 60px; line-height: 60px; font-size: 28px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_end{
+	position: absolute; top: 335px; left: 30px; width: 650px; height: 70px;
+}
+
+.wfcxinfo .tip_add_info .tip_add_end input{
+	float: left; width: 150px; height: 69px; margin-left: 4px; margin-right: 13px; color: #F0F0F0;
+}
+
+
+/**
+  * 键盘样式
+  */
+.wfcxinfo .tip_carNumber{
+	position: absolute; top: 250px; left: 180px; width: 910px; height: 348px; background: url(../images/number_bg.png) no-repeat; display: none;
+}
+
+.wfcxinfo  .tip_carNumber ul{
+	position: absolute; top: 24px; left: 15px; width: 850px; height: 348px;
+}
+
+.wfcxinfo .tip_carNumber li{
+	float: left; width: 73px; height: 67px; margin: 5px 2px 1px 12px; line-height: 67px; text-align: center;
+}
+
+.wfcxinfo .tip_carNumber .del{
+	position: absolute; top: 31px; left: 800px; width: 78px; height: 135px; line-height: 135px; text-align: center; font-size: 36px;
+}
+
+.wfcxinfo .tip_carNumber .ok{
+	position: absolute; top: 177px; left: 808px; width: 70px; height: 107px; text-align: center; font-size: 36px; padding-top: 30px;
+}
+
+.wfcxinfo .tip_carKind{
+	position: absolute; top: 380px; left: 230px; width: 819px; height: 345px; background: url(../images/kind_bg.png) no-repeat; display: none;
+}
+
+.wfcxinfo .tip_carKind ul{
+	position: absolute; top: 25px; left: 18px; width: 819px; height: 345px;
+}
+
+.wfcxinfo .tip_carKind li{
+	float: left; width: 243px; height: 65px; text-align: center; margin: 4px 8px 5px 9px; line-height: 65px; color: #F0F0F0;
+}
+
+.wfcxinfo .tip_carPlace{
+	position: absolute; top: 250px; left: 230px; width: 825px; height: 348px; background: url(../images/place_bg.png) no-repeat; display: none;
+}
+
+.wfcxinfo .tip_carPlace ul{
+	position: absolute; top: 25px; left: 20px; width: 825px; height: 348px;
+}
+
+.wfcxinfo .tip_carPlace li{
+	float: left; width: 72px; height: 67px; text-align: center; margin: 4px 5px 2px 10px; line-height: 67px; color: #F0F0F0;
+}
+
+/**
+ * 新增的查询样式
+ */
+.wfcxinfo .queryUsersInfo{
+	position: absolute; top: 45px; left: 0px; width: 1280px; height: 671px; background: url(../images/cf_result.png) no-repeat; display: none;
+}
+
+.wfcxinfo .queryUsersInfo .usersTitle{
+	position: absolute; top: 103px; left: 405px; width: 458px; height: 70px; text-align:  center; line-height: 70px; font-size: 36px; font: bold; background: #00A4FF; color: gray;
+}
+
+.wfcxinfo .queryUsersInfo .usersInfo{
+	position: absolute; top: 164px; left: 55px; width: 1158px; height: 100px;
+}
+
+.wfcxinfo .queryUsersInfo .usersInfo .usersInfoTitle{
+	position: absolute; top: 10px; left: 12px; width: 170px; height: 40px; background: #00A4FF; line-height: 40px; font-size: 28px; padding-left: 10px; color: #EEE;
+}
+
+.wfcxinfo .queryUsersInfo .usersInfo .usersInfoname{
+	position: absolute; top: 65px; left: 12px; width: 1158px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfcxinfo .queryUsersInfo .usersInfo .usersInfoname span{
+	float: left;
+}
+
+.wfcxinfo .queryUsersInfo .usersInfo .usersInfoname span.userInfoName1{
+	width: 150px; margin-left: 68px;
+}
+
+.wfcxinfo .queryUsersInfo .usersInfo .usersInfoname span.userInfoName1{
+	width: 150px; 
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo{
+	position: absolute; top: 274px; left: 67px; width: 1158px; height: 270px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoTitle{
+	position: absolute; top: 10px; left: 0px; width: 355px; height: 40px; background: #00A4FF; line-height: 40px; font-size: 28px; padding-left: 10px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoTitle span{
+	float: left; font-size: 28px; font: bold; color: #EEE;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoTitle span.usersCommitInfoTitle2{
+	color: #E00;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent{
+	position: absolute; top: 40px; left: 55px; width: 1050px; height: 240px; font-size: 28px;
+}
+
+.usersCommitInfoContent .commit_focus{
+	position: absolute; top: 40px; left: -28px; width: 1102px; height: 107px; background: url(../images/long2_focus.png) no-repeat;
+}
+.usersCommitInfoContent ul{
+	position: absolute; top: 0px; left: 0px; width: 1050px; height: 240px; font-size: 28px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent li{
+	float: left; text-align: center; height: 60px; line-height: 60px; 
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent span{
+	float: left; text-align: center;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent span.commit_date{
+	width: 125px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent span.commit_place{
+	width: 370px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent span.commit_reason{
+	width: 370px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent span.commit_fork{
+	width: 120px;
+}
+
+.wfcxinfo .queryUsersInfo .usersCommitInfo .usersCommitInfoContent span.commit_record{
+	width: 60px;
+}
+
+.wfcxinfo .queryUsersInfo .progress{
+	position: absolute; top: 116px; left: 1125px; width: 5px; height: 150px; background: url(../images/prograss.png) no-repeat;
+}
+
+.wfcxinfo .queryUsersInfo .progress .dot{
+	position: absolute; top: 0px; left: 0px; width: 5px; height: 50px; background: url(../images/dot.png) repeat-y;
+}
+
+
+.save{
+	position: absolute; top: 130px; left: 440px; width: 442px; height: 350px; background: url(../images/tip_save.png) no-repeat; display: none;
+}
+
+.save .tip_save_title{
+	position: absolute; top: 7px; left: 107px; width: 208px; height: 50px; line-height: 50px; font-size: 30px; text-align: center; color: #F0F0F0;
+}
+
+.save .tip_save_licence{
+	position: absolute; top: 80px; left: 20px; width: 390px; height: 35px; line-height: 35px; font-size: 28px; text-align: left; color: #302A2A;
+}
+
+.save .tip_save_info{
+	position: absolute; top: 125px; left: 20px; width: 390px; height: 40px;
+}
+
+.save .tip_save_message{
+	position: absolute; top: 170px; left: 100px; width: 290px; height: 50px; line-height: 50px; font-size: 32px; text-align: center; color: #302A2A;
+}
+
+.save .tip_save_message span{
+	height: 50px; line-height: 50px; font-size: 32px; text-align: center; color: #E00; float: left; width: 120px;
+}
+
+.save .tip_save_end{
+	position: absolute; top: 268px; left: 27px; width: 410px; height: 57px; line-height: 57px; text-align: center; color: #302A2A;
+}
+
+.save .tip_save_end span{
+	width: 140px; height: 51px; float: left; line-height: 51px; margin-left: 34px; margin-right: 0px;
+}
+
+
+/**
+  * 行为处罚样式
+  */
+  
+.wfxw{
+	position: absolute; width: 1280px; height: 720px; 
+}
+
+.wfxw .content{
+	position: absolute; top: 54px; left: 5px; width: 960px; height: 635px; background: url(../images/list_fg_left_bg.png) no-repeat;
+}
+
+.wfxw .content .content_title{
+	position: absolute; top: 68px; left: 58px; width: 328px; height: 48px;
+}
+
+.wfxw .content  .record{
+	position: absolute; top: 150px; left: 80px; width: 510px; height: 140px;
+}
+
+.wfxw .content  .record .record_title{
+	position: absolute; top: 0px; left: 24px; width: 482px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfxw .content  .record .record_event{
+	position: absolute; top: 45px; left: 24px; width: 482px; height: 65px; line-height: 65px; font-size: 28px;
+}
+
+.wfxw .content  .jt_card{
+	position: absolute; top: 300px; left: 80px; width: 510px; height: 140px;
+}
+
+.wfxw .content  .jt_card .jt_card_title{
+	position: absolute; top: 0px; left: 24px; width: 482px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfxw .content  .jt_card .jt_card_event{
+	position: absolute; top: 45px; left: 24px; width: 482px; height: 65px; line-height: 65px; font-size: 28px;
+}
+
+.wfxw .content input{
+	position: absolute; top: 0px; left: 0px; width: 747px; height: 65px; background: url(../images/wfxw_cl_input.png) no-repeat; padding-left: 20px;
+}
+
+
+.wfxw .content .content_end{
+	position: absolute; top: 450px; left: 230px; width: 650px; height: 70px;
+}
+
+.wfxw .content .content_end input{
+	position: initial; float: left; width: 213px; height: 69px; margin-left: 2px; margin-right: 54px; padding-left: 0px;  color: #F0F0F0; background: url(../images/wfcx_xz_button_blur.png) no-repeat;
+}
+
+.wfxw .content .content_end input:focus{
+	 background: url(../images/wfcx_xz_button_focus.png) no-repeat;
+}
+
+.wfxw .content .line{
+	position: absolute; top: 125px; left: 0px; width: 805px; height: 5px; background: url(../images/wfcl_js_line.png) no-repeat;
+}
+
+.wfxw .tips_query{
+	position: absolute; top: 135px; left: 340px; width: 562px; height: 350px; background: url(../images/tip_query_bg.png) no-repeat; display: none;
+}
+
+.wfxw .tips_query .tips_query_title{
+	position: absolute; top: 1px; left: 131px; width: 286px; height: 56px; line-height: 56px; font-size: 30px; text-aligner;
+}
+
+.wfxw .tips_query  .tips_query_info{
+	position: absolute; top: 80px; left: 30px; width: 510px; height: 140px;
+}
+
+.wfxw .tips_query  .tips_query_info .tips_query_info_title{
+	position: absolute; top: 0px; left: 4px; width: 482px; height: 40px; line-height: 40px; font-size: 28px;
+}
+
+.wfxw .tips_query  .tips_query_info .tips_query_info_event{
+	position: absolute; top: 45px; left: 4px; width: 482px; height: 65px; line-height: 65px; font-size: 28px;
+}
+
+.wfxw .tips_query  .tips_query_info .tips_query_info_event input{
+	width: 482px; height: 65px; line-height: 65px; font-size: 28px; background: transparent;
+}
+
+.wfxw .tips_query  .tips_query_info .tips_query_info_event input{
+	background: orange;
+}
+
+.wfxw .tips_query .tips_query_items{
+	position: absolute; top: 126px; left: 20px; width: 513px; height: 396px; background: url(../images/tip_qurey_item_bg.png) no-repeat;
+}
+.wfxw .tips_query .tips_query_items ul{
+	position: absolute; top: 75px; left: 20px; width: 470px; height: 300px;
+}
+
+.wfxw .tips_query .tips_query_items li{
+	float: left; width: 453px; height: 62px; line-height: 62px; margin: 8px 0px 2px 9px;
+}
+
+/**
+ * 尾号查询
+ */
+.tailQuery{
+	position: absolute; width: 1280px; height: 720px;
+}
+
+.tailQuery .content{
+	position: absolute; top: 70px; left: 5px; width: 960px; height: 635px; background: url(../images/xxwh2.png) no-repeat;
+}
+/*background: url(../images/list_fg_left_bg.png) no-repeat;*/
+.tailQuery .content li{
+	float: left; width: 161px; height: 60px; text-align: center; margin: 0px 2px 0px 1px;
+}
+
+.tailQuery .content li.number{
+	color: #020202; height: 60px; line-height: 60px; 
+	/**
+	  *background: url(../images/wfin_licent_bgs.png) no-repeat 2px; color: #FFF; 
+	  */
+}
+
+.tailQuery .content li.week{
+	height:60px; line-height: 60px;
+}
+
+.tailQuery .content li.date{
+	font-size: 18px; line-height: 33px; padding-top: 88px; height: 70px;	
+}
+
+.tailQuery .head{
+	position:absolute; width:818px; height:68px; font-size:24px; left:5px; top:8px; line-height: 48px;
+}
+
+.tailQuery .head .limit_text{ 
+	position:absolute; width:230px; height:35px; left:200px; top:28px; font-size:32px; color:#130808; line-height: 35px;
+}
+
+.tailQuery .head .limit_num{ 
+	position:absolute; width:90px; height:35px; left:218px; top:2px; font-size:30px; color:#ff6363; line-height: 35px;
+}
+
+.tailQuery .head .head_date{ 
+	position:absolute; width:265px; height:33px; left:533px; top:8px; font-size:24px; color:#130808; line-height: 35px;
+}

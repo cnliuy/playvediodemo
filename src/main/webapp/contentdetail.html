@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>内容详情页面</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<script src="js/common.js"></script>
+<script type="text/javascript">
+	Coship.setDrawFocusRing(1);
+	Utility.setDrawFocusRing(0);
+var areaCode = Utility.getSystemInfo("ARC");
+
+document.onkeypress = grabEvent;
+function grabEvent(event)
+{
+var keycode = event.keyCode || event.which;
+if(keycode==13){
+	var rtsp="rtsp://172.31.183.247:554/CP1N02A08_003,PA201204191212000033^^^?&areaCode="+areaCode+"&userId=2011061302&spCode=2122&sessionId=632752389&urlEndTime=20120613T191637Z&sessionSign=a72c43e7b11051993d74d576968d5522&userSign=&startTime=&endTime=&productId=&tryFlag=&subId=&resourceId=40108&purchaseToken=9143705496522&resourceName=鸿门宴";
+
+
+//获取到RTSP串成功之后，需要设置4个全局变量，供播放器使用
+   setGlobalVar("vod_play_type", "0");//0正常点播  1试看
+   setGlobalVar("vod_ctrl_rtsp", rtsp);//将RTSP串设置为全局变量
+   setGlobalVar("displayName", "鸿门宴");//将片名设置为全局变量
+   setGlobalVar("vod_ctrl_backurl",window.location.href);//将点播完成之后，需要返回的页面地址设为全局变量
+   location.href ="vodplay.htm";//播放器地址URL
+}
+}
+</script>
+</head>
+<body>
+<center>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<font color="red">按确认键就能实现对"岁月神偷"的播放！</font>
+<img src="images/button_q.png"></img>
+</center>
+</body>
+</html>

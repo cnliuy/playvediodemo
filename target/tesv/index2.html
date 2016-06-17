@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://192.100.15.11:8180/tjjg_HD/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页</title>
+<link href="./css2/style.css" rel="stylesheet" type="text/css">
+<link href="./css2/new_css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./js2/global.js"></script>
+<script type="text/javascript" src="./js2/getData.js"></script>
+<script type="text/javascript" src="./js2/dataMove.js"></script>
+<script type="text/javascript" src="./js2/commonAPI.js"></script>
+<script type="text/javascript" src="./js2/index.js"></script>
+<style>
+.index_bg{
+	position: absolute; width: 1280px; height: 720px; background: url(images/index_bg_2.png) no-repeat;
+}
+</style>
+<script type="text/javascript">
+	
+Date.prototype.Format = function(fmt) 
+{ //author: meizz 
+  var o = { 
+    "M+" : this.getMonth()+1,                 //月份 
+    "d+" : this.getDate(),                    //日 
+    "h+" : this.getHours(),                   //小时 
+    "m+" : this.getMinutes(),                 //分 
+    "s+" : this.getSeconds(),                 //秒 
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度 
+    "S"  : this.getMilliseconds()             //毫秒 
+  }; 
+  if(/(y+)/.test(fmt)) 
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length)); 
+  for(var k in o) 
+    if(new RegExp("("+ k +")").test(fmt)) 
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length))); 
+  return fmt; 
+}
+	
+//var deliver = "deliver://490000000:6875:64:1901";      //0918add-直播视频串
+//var deliver = "deliver://339000000:6875:64:22417";     //0929add中央1台
+//var deliver = "deliver://522000000:6875:64:22613";	       //聚精影视
+var deliver ="deliver://554000000.6875.64.22650";   //0929上线视频
+var mp = null;							       //0918add
+//var rtspurl1="rtsp://10.80.0.51:554/163^^^?&amp;startTime=";
+//var rtspurl2="&amp;endTime=&amp;areaCode=";
+//var rtspurl3="&amp;resgroupId=&amp;userId=";
+//var rtspurl4="&amp;sessionId=0&amp;sessionType=null&amp;payType=1&amp;productId=0&amp;displayName=&amp;provider=coship&amp;ssId=2010857&amp;vcrInfo=&amp;token=";
+//var rtspurl5="&amp;serverID=10.80.0.75:8080/AAA/rtspAuth";
+
+var rtspurl1="rtsp://10.80.0.51:554/999^^^?&amp;startTime=";
+var rtspurl2="&amp;endTime=&amp;areaCode=";
+var rtspurl3="&amp;resgroupId=&amp;userId=";
+var rtspurl4="&amp;sessionId=0&amp;sessionType=null&amp;productId=0&amp;displayName=&amp;provider=coship&amp;ssId=2010863&amp;vcrInfo=&amp;";
+var rtspurl5="&amp;serverID=10.80.0.75:8080/AAA/rtspAuth";
+
+
+//0918add直播视频播放信号
+function playmedia(){
+	var mp = new MediaPlayer();
+//{{ add start, 
+	var areaCode = Utility.getSystemInfo("ARC");
+	var userId = Utility.getSystemInfo("UID");
+//	var token = loginfo.getValue("token");
+	var nowDate = new Date();
+	var date = (new Date(nowDate.getTime()-600*1000)).Format("yyyyMMddhhmmss");
+	
+	var tsRTSPURL = rtspurl1+date+rtspurl2+areaCode+rtspurl3+userId+rtspurl4;
+
+	mp.setSingleMedia(tsRTSPURL);							//0918add,modify-deliver
+//}}	add end 
+	mp.setVideoDisplayArea(360, 123, 881, 510);		//0918add,上左宽高
+	mp.setVideoDisplayMode(0);
+	mp.setMatchMethod(2);
+	mp.refreshVideoDisplay();						//0918add
+	mp.playFromStart();								//0918add
+}
+
+//0918add--跳转栏目关闭视频播放
+function closeVideo(){
+	mp = new MediaPlayer();
+	mp.stop();
+}
+</script>
+</head>
+<body onload="init();" class="index_bg" bgcolor="transparent">
+	<div class="index">
+		<div class="new_logo"></div>
+        <div class="index_db_topic"></div>
+		<div class="new_ads">
+			<div class="new_ads1" id="ads1">
+				<!--<div class="new_ads_text2">--><!--按<font color="#890dd7">2</font>进入--><!--</div>-->
+			</div>
+            
+			<div class="new_ads2">
+				<div class="new_adTitle" style="left:-35px;">今日限行尾号&nbsp;<span class="new_index_ad_num" id="index_ad_num"></span></div>
+				<div class="new_ads_text1"><!--按<font color="#010b09">1</font>进入--></div>
+				<div class="new_date" id="date">2016年6月7日  星期二</div>
+			</div>
+            
+           
+		</div>
+		<div class="new_menu">
+			<div class="menuFocus" id="menuFocus" style="top: 6px; display: block;"></div>
+			<ul>
+				<li id="menu_0"><span class="images" id="images_0" style="display: block; background: url(&quot;media/25/201409241334480867b.png&quot;) no-repeat;"></span><span class="text" id="text_0" style="color: rgb(255, 255, 255);">交管自助</span></li>
+				<li id="menu_1"><span class="images" id="images_1" style="display: block; background: url(&quot;media/14/201407021511310612s.png&quot;) no-repeat;"></span><span class="text" id="text_1">违法信息查询</span></li>
+				<li id="menu_2"><span class="images" id="images_2" style="display: block; background: url(&quot;media/17/201407021512200596s.png&quot;) no-repeat;"></span><span class="text" id="text_2">宏观路况</span></li>
+				<li id="menu_3"><span class="images" id="images_3" style="display: none;"></span><span class="text" id="text_3"></span></li>
+				<li id="menu_4"><span class="images" id="images_4" style="display: none;"></span><span class="text" id="text_4"></span></li>
+				<li id="menu_5"><span class="images" id="images_5" style="display: none;"></span><span class="text" id="text_5"></span></li>
+				<li id="menu_6"><span class="images" id="images_6" style="display: none;"></span><span class="text" id="text_6"></span></li>
+				<li id="menu_7"><span class="images" id="images_7" style="display: none;"></span><span class="text" id="text_7"></span></li>
+			</ul>
+		</div>
+        <!-------0918modify---------------->
+		<!--<div class="new_list">
+			<div class="image">
+				<img id="adpic1" src="" width="860" height="490" />
+				<img id="adpic2" src="" width="860" height="490" style="display:none;"/>
+				<div class="scrollpage">
+					<ul id="scrollpage"></ul>
+				</div>
+			</div>
+		</div>-->
+		<!--<div class="tail_pic">
+			<div class="tail_pic_0"></div>
+			<div class="tail_pic_1"></div>
+		</div>	-->
+		<div class="new_tail_tip">
+			<marquee class="tip_text" id="tip_text">不听，不信，不给陌生人转帐、汇款。提高警惕，防范诈骗。</marquee>
+		</div>
+		<div class="tips" id="tips">
+			<div class="query" id="tips_query">
+				<div class="tip_query_title" id="tip_query_title">温馨提示</div>	
+				<div class="tip_query_pic" id="tip_query_pic"></div>
+				<div class="tip_query_message" id="tip_query_message">栏目正在建设中！</div>
+				<div class="tip_query_end" id="tip_query_end">按任意键返回</div>			
+			</div>	
+		</div>	
+	</div>
+
+
+</body></html>
