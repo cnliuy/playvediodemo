@@ -1,6 +1,6 @@
 #说明
-### 页面输入串号，然后跳到播放页面，播放页面调用中间件播放器。利用spring boot 实现，可以mvn install 打包成war，部署在tomcat下使用。
-### index.html 加了跳转，解决相对路径问题，详细参见 index.html页面注释
+1.页面输入串号，然后跳到播放页面，播放页面调用中间件播放器。利用spring boot 实现，可以mvn install 打包成war，部署在tomcat下使用。<br><br>
+2.index.html 加了跳转，解决相对路径问题，详细参见 index.html页面注释
 
 #spring boot 部署为 war （Tomcat下使用）
 jar to  war <br>
