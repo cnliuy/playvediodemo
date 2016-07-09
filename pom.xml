@@ -50,7 +50,7 @@
 		</dependency> 
 		-->
 		
-		<!-- 因为打成war 所以要调整 去除 tomcat的依赖-->
+		<!-- 因为打成war 所以这里要 tomcat的依赖， 注意是需要 correct-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
